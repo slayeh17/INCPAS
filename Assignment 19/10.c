@@ -7,10 +7,9 @@ typedef struct info
 }info;
 int main()
 {
-    info s[100];int k=0,l=0,p=1;
+    info s[100];int k=0,l=0,p=1,v;
     while(p)
     {
-        int v;
         printf("New User: --- Enter 1\nOld User: --- Enter 2\n");
         scanf("%d",&v);
         switch(v)
@@ -64,6 +63,7 @@ int main()
                 printf("Username or Password is incorrect\nPlease Re-enter OR Press 1 to sign up.\n");
                 break;
             }
+            default:printf("\nWrong Input!\n");break;
         }
             if(p==0)
             break;
